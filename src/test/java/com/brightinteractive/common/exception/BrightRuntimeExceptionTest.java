@@ -20,6 +20,12 @@ public class BrightRuntimeExceptionTest
     }
 
     @Test
+    public void testNoArgConstructor()
+    {
+        @SuppressWarnings("ThrowableInstanceNeverThrown") Exception e = new BrightRuntimeException();
+    }
+
+    @Test
     public void testMessageConstructor()
     {
         String message = "Something went wrong";
