@@ -106,6 +106,12 @@
         <inspection_tool class="TypeParameterExtendsObject" enabled="false" level="WARNING" enabled_by_default="false" />
         <inspection_tool class="UnnecessaryBoxing" enabled="false" level="WARNING" enabled_by_default="false" />
         <inspection_tool class="UnnecessaryUnboxing" enabled="false" level="WARNING" enabled_by_default="false" />
+        <inspection_tool class="UnusedDeclaration" enabled="false" level="WARNING" enabled_by_default="false">
+          <option name="ADD_MAINS_TO_ENTRIES" value="true" />
+          <option name="ADD_APPLET_TO_ENTRIES" value="true" />
+          <option name="ADD_SERVLET_TO_ENTRIES" value="true" />
+          <option name="ADD_NONJAVA_TO_ENTRIES" value="true" />
+        </inspection_tool>
       </profile>
     </profiles>
     <option name="PROJECT_PROFILE" value="Project Default" />
@@ -266,31 +272,20 @@
   </component>
   <component name="ProjectCodeStyleSettingsManager">
     <option name="PER_PROJECT_SETTINGS">
-      <value />
+      <value>
+        <XML>
+          <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
+        </XML>
+      </value>
     </option>
   </component>
   <component name="ProjectDictionaryState">
     <dictionary name="francis">
       <words>
         <w>brightinteractive</w>
+        <w>repo</w>
       </words>
     </dictionary>
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>Abstraction issues</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
   </component>
   <component name="ProjectModuleManager">
     <modules>
