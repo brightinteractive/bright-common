@@ -22,7 +22,8 @@ public class BrightRuntimeExceptionTest
     @Test
     public void testNoArgConstructor()
     {
-        @SuppressWarnings("ThrowableInstanceNeverThrown") Exception e = new BrightRuntimeException();
+        //noinspection ThrowableInstanceNeverThrown
+        new BrightRuntimeException();
     }
 
     @Test
