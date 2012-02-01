@@ -5,6 +5,7 @@
 package com.brightinteractive.common.service;
 
 import java.io.Serializable;
+import java.util.List;
 
 import com.brightinteractive.common.dao.GenericDao;
 
@@ -51,5 +52,10 @@ public class GenericManagerImpl<T, ID extends Serializable> implements GenericMa
     public void setDao(GenericDao<T, ID> dao)
     {
         this.dao = dao;
+    }
+
+    public List<T> getAll()
+    {
+        return dao.findAll();
     }
 }

@@ -5,6 +5,7 @@
 package com.brightinteractive.common.service;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * <p>This interface should be implemented by any classes wishing to provide object services.</p>
@@ -38,4 +39,11 @@ public interface GenericManager<T, ID extends Serializable>
      * @param object The object to delete.
      */
     void delete(T object);
+
+    /**
+     * Get all objects of type T.
+     *
+     * @return all objects of type T.
+     */
+    List<T> getAll();
 }
