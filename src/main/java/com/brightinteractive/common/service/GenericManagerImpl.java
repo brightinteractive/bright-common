@@ -38,6 +38,13 @@ public class GenericManagerImpl<T, ID extends Serializable> implements GenericMa
         return dao.findById(id);
     }
 
+	@Override
+	public boolean exists(ID id)
+	{
+		 return dao.exists(id);
+	}
+
+
     @Override
     public void delete(T object)
     {
