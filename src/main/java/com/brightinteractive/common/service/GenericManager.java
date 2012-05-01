@@ -26,11 +26,11 @@ public interface GenericManager<T, ID extends Serializable>
      */
     T get(ID id);
 
-	/**
+    /**
      * @param id the id of the object.
      * @return true if the object specified by the given id exits.
      */
-	boolean exists(ID id);
+    boolean exists(ID id);
 
     /**
      * Save the given object to the data store.

@@ -23,7 +23,7 @@ public interface GenericDao<T, ID extends Serializable> {
 
     public T findByIdAndLock(ID id);
 
-	boolean exists(ID id);
+    boolean exists(ID id);
 
     List<T> findAll();
 
