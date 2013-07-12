@@ -28,4 +28,23 @@ public class ShortUtilTest
 	{
 		ShortUtil.tryToConvertIntToShort(((int) Short.MAX_VALUE) + 1);
 	}
+
+	@Test
+	public void testConvertLongThatFits()
+	{
+		short result = ShortUtil.tryToConvertLongToShort(-42);
+		assertEquals(-42, result);
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testConvertLongUnderflow()
+	{
+		ShortUtil.tryToConvertLongToShort(((long) Short.MIN_VALUE) - 1);
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testConvertLongOverflow()
+	{
+		ShortUtil.tryToConvertLongToShort(((long) Short.MAX_VALUE) + 1);
+	}
 }
