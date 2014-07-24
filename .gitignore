@@ -1,5 +1,8 @@
-# Maven output files
-/target
-
-# User-specific IntelliJ workspace files
+.idea/
+target/
+*.iml
+*.ipr
 *.iws
+*.DS_Store
+*-local.properties
+.*~
