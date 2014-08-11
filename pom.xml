@@ -10,7 +10,7 @@
 
 	<groupId>com.brightinteractive</groupId>
 	<artifactId>bright-common</artifactId>
-	<version>1.4.0-SNAPSHOT</version>
+	<version>1.5.0-SNAPSHOT</version>
 
 	<name>Bright Interactive Common Code</name>
 	<description>Common code that has no dependencies except the Java standard library</description>
